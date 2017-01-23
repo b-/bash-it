@@ -1,4 +1,5 @@
-#!/usr/bin/env bash -x
+#!/usr/bin/env bash
+set -x
 test_directory="$(cd "$(dirname "$0")" && pwd)"
 bats_executable="${test_directory}/../bats/bin/bats"
 
