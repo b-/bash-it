@@ -3,7 +3,7 @@ test_directory="$(cd "$(dirname "$0")" && pwd)"
 bats_executable="${test_directory}/../bats/bin/bats"
 
 [ ! -e $bats_executable ] && \
-  git clone --depth 1 https://github.com/sstephenson/bats.git ${test_directory}/../bats
+  git clone --depth 1 https://github.com/b-/bats.git ${test_directory}/../bats -b patch-1
 
 if [ -z "${BASH_IT}" ]; then
   export BASH_IT=$(cd ${test_directory} && dirname $(pwd))
